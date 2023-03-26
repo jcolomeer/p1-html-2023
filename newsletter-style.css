@@ -1,28 +1,78 @@
-:root{
-    --font: 'Inter', sans-serif;;
+:root {
+  --font: "Inter", sans-serif;
+  --orange: #ffa500;
+  --darkblue: #08062c;
+  --lightgrey: #888888;
 }
 body {
-    font-family: var(--font);
-    margin: 4rem 6rem 0;
+  font-family: var(--font);
+  margin: 2rem 6rem 0;
 }
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-header ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-left: auto;
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: auto;
 }
-header li{
-    margin-right: 3rem;
+header li {
+  margin-right: 3rem;
+  color: var(--lightgrey);
 }
-header li:hover{
-    color: orange;
-    cursor: pointer;
+header li:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+.landing-news {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+.main-news {
+  width: 65%;
+}
+.main-news img {
+  width: 100%;
+}
+.main-news .title {
+  display: block;
+  margin-right: 2rem;
+  font-size: 3.8rem;
+  font-weight: bolder;
+  line-height: 4rem;
+  width: 70rem;
+  color: var(--darkblue);
+}
+.main-news .info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
 }
 
-
-
+.main-news .summary {
+  display: flex;
+  flex-direction: column;
+  color: var(--lightgrey);
+}
+.main-news p {
+  margin: 0 0 auto;
+  line-height: 2rem;
+  color: var(--lightgrey);
+}
+.main-news button {
+  background-color: var(--darkblue);
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  letter-spacing: 3pt;
+  font-family: var(--font);
+  border: none;
+}
+.main-news button:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
