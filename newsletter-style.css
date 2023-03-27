@@ -40,12 +40,12 @@ header li:hover {
 }
 .main-news .title {
   display: block;
-  margin-right: 2rem;
   font-size: 3.8rem;
   font-weight: bolder;
   line-height: 4rem;
-  width: 70rem;
+  width: 40rem;
   color: var(--darkblue);
+  margin-right: 2rem;
 }
 .main-news .info {
   display: flex;
@@ -57,6 +57,8 @@ header li:hover {
   display: flex;
   flex-direction: column;
   color: var(--lightgrey);
+  width: 35rem;
+  
 }
 .main-news p {
   margin: 0 0 auto;
@@ -71,8 +73,43 @@ header li:hover {
   letter-spacing: 3pt;
   font-family: var(--font);
   border: none;
+  position: relative;
+  top: 1.8rem;
+
 }
 .main-news button:hover {
   cursor: pointer;
   transform: scale(1.05, 1.05);
+}
+.recent-news {
+  width: 35%;
+  height: auto;
+  background: var(--darkblue);
+  margin: 0 2rem;
+  padding: 1.5rem;
+}
+.recent-news .title {
+  display: block;
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.recent-news span {
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.recent-news span:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+.recent-news p {
+  color: var(--lightgrey);
+  padding-bottom: 1rem;
+  border-bottom: solid 0.1rem #8888883d;
+}
+.recent-news p:last-child {
+  border-bottom: none;
 }
