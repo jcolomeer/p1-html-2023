@@ -6,12 +6,17 @@
 }
 body {
   font-family: var(--font);
-  margin: 2rem 6rem 0;
+  padding: 2rem 6rem 0;
+  margin: 0;
 }
+
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 header ul {
   display: flex;
@@ -30,7 +35,7 @@ header li:hover {
 .landing-news {
   display: flex;
   flex-direction: row;
-  margin: 2rem 0;
+  margin: 2rem 0 5rem;
 }
 .main-news {
   width: 65%;
@@ -58,7 +63,6 @@ header li:hover {
   flex-direction: column;
   color: var(--lightgrey);
   width: 35rem;
-  
 }
 .main-news p {
   margin: 0 0 auto;
@@ -75,7 +79,6 @@ header li:hover {
   border: none;
   position: relative;
   top: 1.8rem;
-
 }
 .main-news button:hover {
   cursor: pointer;
@@ -112,4 +115,50 @@ header li:hover {
 }
 .recent-news p:last-child {
   border-bottom: none;
+}
+.ranked-news {
+  display: flex;
+  flex-direction: row;
+}
+.ranked-news .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 0.8rem;
+}
+.ranked-news .number {
+  display: block;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 24pt;
+}
+.ranked-news img {
+  width: 7rem;
+  height: auto;
+  object-fit: cover;
+}
+.ranked-news .info .title {
+  font-weight: bold;
+  font-size: 16pt;
+  padding-top: 0.2rem;
+}
+.ranked-news .info .title:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+.ranked-news .info p{
+  color: var(--lightgrey);
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 0.1rem;
+  background-color: lightgrey; 
+  margin: 0 auto 4rem;
+  border-radius: 1rem;
+}
+.space {
+  height: 2rem;
 }
